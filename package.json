@@ -1,0 +1,58 @@
+{
+  "name": "graphql-workshop-by",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link": "^1.2.11",
+    "apollo-link-http": "^1.5.14",
+    "final-form": "^4.12.0",
+    "graphql-tag": "^2.10.1",
+    "history": "^4.9.0",
+    "qs": "^6.7.0",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.5",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-router": "5.0.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "5.0.0",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "watch-client": "yarn start",
+    "lint": "eslint 'src/**/*.{js,ts,tsx,jsx}'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@playlyfe/gql": "^2.6.1",
+    "@types/history": "^4.7.2",
+    "@types/jest": "24.0.12",
+    "@types/node": "^12.0.0",
+    "@types/react": "16.8.17",
+    "@types/react-dom": "16.8.4",
+    "@types/react-router-bootstrap": "^0.24.5",
+    "@types/react-router-dom": "^4.3.3",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-graphql": "^3.0.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "lerna": "^3.13.1",
+    "prettier": "^1.17.0",
+    "typescript": "^3.4.5"
+  }
+}
