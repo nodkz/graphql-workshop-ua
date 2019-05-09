@@ -11,7 +11,7 @@
 Прошу вас склонировать эту репку:
 
 ```bash
-git clone git@github.com:nodkz/graphql-workshop-ua.git
+git clone https://github.com/nodkz/graphql-workshop-ua.git
 ```
 
 Зайти в папку с проектом и **установить пакеты**:
