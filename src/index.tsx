@@ -1,17 +1,17 @@
-import gql from 'graphql-tag';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createBrowserHistory } from 'history';
+// import App from './pages/_app';
+import { apolloClient } from './apolloClient';
 
-const a = 1;
-const b = 'c';
+const history = createBrowserHistory();
 
-a / b; // should be an error
+function App() {
+  return <div>hello world!!!</div>;
+}
 
-gql`
-  query Test {
-    viewer {
-      order {
-        customerID
-        wrongField # should be an error
-      }
-    }
-  }
-`;
+ReactDOM.render(
+  // <App history={history} apolloClient={apolloClient} />,
+  <App />,
+  document.getElementById('root')
+);
