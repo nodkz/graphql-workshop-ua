@@ -1,17 +1,17 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React from 'react';
 import { Query } from 'react-apollo';
-// import { RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps } from 'react-router-dom';
 import gql from 'graphql-tag';
-// import { OrdersTestQuery as R } from './__generated__/OrdersTestQuery';
+import { OrdersTestQuery } from './__generated__/OrdersTestQuery';
 
-// interface Props extends RouteComponentProps {}
-interface Props {}
+interface Props extends RouteComponentProps {}
 
-// class TypedQuery extends Query<R> {}
+class TypedQuery extends Query<OrdersTestQuery> {}
 
 export default function Orders(props: Props) {
   return (
-    <Query
+    <TypedQuery
       query={gql`
         query OrdersTestQuery {
           viewer {
@@ -42,13 +42,14 @@ export default function Orders(props: Props) {
       {({ error, loading, data }) => {
         if (loading) return <div>Loading...</div>;
         if (error) return <div>{error.message}</div>;
-        if (data)
+        if (data) {
           return (
             <div>
               <pre>{JSON.stringify(data, null, 2)}</pre>
             </div>
           );
+        }
       }}
-    </Query>
+    </TypedQuery>
   );
 }
