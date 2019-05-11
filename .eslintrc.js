@@ -18,7 +18,7 @@ module.exports = {
     'graphql/template-strings': [
       'error',
       {
-        env: 'literal',
+        env: 'apollo', // 'literal',
         tagName: 'gql',
         schemaString: fs.readFileSync(path.resolve(__dirname, './schema.graphql'), 'utf8'),
       },
@@ -49,6 +49,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/no-empty-interface': 0,
+    '@typescript-eslint/camelcase': 0,
   },
   env: {
     jasmine: true,
