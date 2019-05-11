@@ -57,6 +57,6 @@ const query = gql`
   }
 `;
 
-console.log(query);
-
-// const res = apolloClient.query();
+console.log('DocumentNode:', query);
+const variables = { page: 1, perPage: 5 };
+apolloClient.query({ query, variables }).then((res: any) => console.log(`Result:`, res));
